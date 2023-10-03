@@ -2,11 +2,6 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 
 html, body, h1, h2, h3,h4,h5,h6,p,img,picture{
     padding: 0;
@@ -39,18 +34,22 @@ body{
     padding: 0.5rem 1rem;
     background-color: white;
     color: var(--Pink);
+    cursor: pointer;
 }
 
 .filled-btn{
     border-radius: 3rem;
     border: none;
     outline: none;
-    padding: 1.7rem 5rem;
+    padding: 1.5rem 5rem;
     background-color: var(--Pink);
     color: white;
     font-size: 1.2rem;
+    cursor: pointer;
 }
-
+.filled-btn:hover{
+    background-color: var(--Light-Pink);
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -79,4 +78,47 @@ header img{
 .center p{
     padding: 1rem 30%;
     font-family: var(--secondary-font);
+}
+
+.mockup{
+    padding: 0 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mockup img{
+    width: 50rem;
+}
+
+.box{
+    display: grid;
+    gap: 2;
+    grid-template-columns: 50% 50%;
+    margin-top: 5rem;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+}
+.box1 div{
+    width: 15rem;
+    padding: 2rem;
+}
+.box1 h2{
+    font-size: 4rem;
+}
+.box1 p{
+    color: grey;
+}
+.section1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    background-image: url(./images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10rem;
+}
+.section1 img{
+    width: 25rem;
 }
